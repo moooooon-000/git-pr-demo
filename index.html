@@ -8,5 +8,17 @@
 <body>
   <h1>Git 协作练习</h1>
   <p>这是用于练习分支、Pull Request 和代码评审的小项目。</p>
+
+  <label for="name">姓名：</label>
+  <input id="name" type="text" placeholder="请输入姓名">
+  <button type="button" onclick="showGreeting()">显示欢迎语</button>
+  <p id="greeting"></p>
+
+  <script>
+    function showGreeting() {
+      const name = document.getElementById("name").value;
+      document.getElementById("greeting").textContent = "你好，" + name + "！";
+    }
+  </script>
 </body>
 </html>
