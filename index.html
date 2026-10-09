@@ -16,7 +16,7 @@
 
   <script>
     function showGreeting() {
-      const name = document.getElementById("name").value;
+      const name = document.getElementById("name").value.trim() || "访客";
       document.getElementById("greeting").textContent = "你好，" + name + "！";
     }
   </script>
